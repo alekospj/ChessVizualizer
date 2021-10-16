@@ -43,7 +43,7 @@ app.layout = html.Div(id = 'king-container',children = [
     #Here I am starting my Tabs
     dcc.Tabs([
         ##########################################   TAB 1 ################################################################
-        dcc.Tab(label='Vizualize all Countries', children=[
+        dcc.Tab(className='Tabs',label='Vizualize all Countries', children=[
 
             # Let's start making the rows for the Graphs and selections
             dbc.Row(className='second-row', children=[
@@ -110,7 +110,7 @@ app.layout = html.Div(id = 'king-container',children = [
         ##########################################   TAB 1   end    ##############################################
 
         ##########################################   TAB 2 #######################################################
-        dcc.Tab(label='Vizualize per Country', children=[
+        dcc.Tab(className='Tabs',label='Vizualize per Country', children=[
             dbc.Row(className='second-row', children=[
                 dbc.Col([
                     html.P("Select Countries:"),
